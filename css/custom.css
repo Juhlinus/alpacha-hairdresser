@@ -1,0 +1,244 @@
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none;    /* Konqueror */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently
+  not supported by any browser */
+}
+
+html, body
+{
+	font-family: 'Roboto', sans-serif;
+}
+
+a,a:hover,a:active,a:focus {
+	color: white;
+}
+
+#wrapper
+{
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+#main
+{
+	margin: 0 auto;
+	width: 1200px;
+	z-index: 5;
+	color: black;
+}
+
+#header
+{
+	position: absolute;
+	
+	background-image: url('../img/PEI-Hair-Salons.jpg');
+	background-size: cover;
+	background-position: center;
+
+	height: 650px;
+	width: 100%;
+	z-index: -2;
+}
+
+#header-overlay
+{
+	position: absolute;
+	background: rgba(115, 189, 140, 0.75);
+	height: 650px;
+	width: 100%;
+	z-index: -1;
+}
+
+header h1
+{
+	color: white;
+	font-weight: 300;
+}
+
+nav
+{
+	padding-top: 22.5px;
+}
+
+nav h5
+{
+	text-transform: uppercase;
+	font-weight: thin;
+	color: white;
+	font-size: 12pt;
+	font-weight: 300;
+}
+
+#content
+{
+	padding-top: 175px;
+	text-align: center;
+	height: 580px;
+}
+
+#content h1
+{
+	color: white;
+	font-weight: 400;
+}
+
+#content h3
+{
+	color: white;
+	font-weight: 300;
+}
+
+#subcontent
+{
+	padding-top: 50px;
+	text-align: center;
+	color: #626262;
+	min-height: 550px;
+}
+
+.gi-2x 
+{ 
+	font-size: 2em; 
+}
+
+.gi-3x 
+{ 
+	font-size: 3em; 
+}
+
+.gi-4x 
+{ 
+	font-size: 4em; 
+}
+
+.gi-5x 
+{ 
+	font-size: 5em; 
+}
+
+#bulletpoints
+{
+	padding-top: 50px;
+}
+
+#bulletpoints > div > h4
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+}
+
+#employees
+{
+	border-top: 1px solid rgba(98, 98, 98, 0.25);
+	padding-top: 50px;
+	text-align: center;
+	color: #626262;
+	min-height: 550px;
+	border-bottom: 1px solid rgba(98, 98, 98, 0.25);
+}
+
+.person
+{
+	margin: 50px auto;
+	background-image: url('../img/man-camera-1477714-638x437.jpg');
+	background-size: cover;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%; /* future proofing */
+	-khtml-border-radius: 50%; /* for old Konqueror browsers */
+	width: 100px;
+	height: 100px;
+}
+
+button {
+	position: absolute;
+	top: -4px;
+}
+button:first-child {
+	left: 0;
+}
+button:last-child {
+	right: 0;
+}
+table {
+	background: #74BE8D;
+	border-collapse: collapse;
+	color: #222;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 13px;
+	width: 100%;
+}
+td {
+	border: 1px solid #71AD85;
+	color: #444;
+	line-height: 22px;
+	text-align: center;
+	height: 50px;
+}
+tr:first-child td {
+	color: #222;
+	font-weight: 700;
+}
+.selected {
+	background: #57D883;
+	border: 0;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, .5) inset;
+}
+
+.busy {
+	background: #E86262;
+}
+
+#calendar
+{
+	margin: 12.5px auto;
+	text-align: center;
+	color: #626262;
+}
+
+#calendar table
+{
+	margin-top: 20px;
+}
+
+#booking
+{
+	text-align: left;
+}
+
+#booking > h4
+{
+	padding-top: 7.5px;
+}
+
+label,input
+{
+	margin-top: 10px;
+	display: block;
+	width: 200px;
+}
+
+textarea
+{
+	width: 200px;
+	height: 75px;
+}
+
+@media only screen and (max-device-width: 800px)
+{
+	nav
+	{
+		display: none;
+	}
+
+	#main
+	{
+		width: initial;
+	}
+}
