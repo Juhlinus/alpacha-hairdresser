@@ -11,6 +11,8 @@
 html, body
 {
 	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+	max-width: 100%;
 }
 
 a,a:hover,a:active,a:focus {
