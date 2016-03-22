@@ -239,12 +239,15 @@ textarea
 	width: 1200px;
 	z-index: 5;
 	color: black;
+	float: initial;
 }
 
 #prices
 {
 	position: relative;
 	background-image: url('../img/barber-shop-2.jpg');
+	background-size: cover;
+	background-position: center;
 	min-height: 850px;
 	padding: 0;
 	z-index: -2;
@@ -262,6 +265,7 @@ textarea
 {
 	margin: 50px auto;
 	width: 1200px;
+	float: initial;
 }
 
 #sub-prices > h1
@@ -271,13 +275,44 @@ textarea
 	font-size: 46pt;
 }
 
+.offer
+{
+	background: white;
+	margin: 100px 4% 0px 4%;
+	height: 450px;
+	border-radius: 25px;
+	padding: 15px;
+	text-align: center;
+}
+
+.offer > h1
+{
+	color: #73BDB1;
+}
+
+.offer > h3
+{
+	color: #99DFE6;
+}
+
+.offer > p
+{
+	color: gray;
+}
+
+.clear-price
+{
+	padding-top: 25px;
+	height: 65%;
+}
+
 @media only screen and (max-device-width: 800px)
 {
 	nav
 	{
 		float: right;
 	}
-	#main
+	#main,#second-main,#sub-prices
 	{
 		width: initial;
 	}
@@ -290,6 +325,37 @@ textarea
 	#content
 	{
 		padding-top: 75px;
+	}
+
+	#prices,#prices-overlay
+	{
+		min-height: 600px;
+	}
+
+	.offer
+	{
+		margin-top: 25px;
+		height: 300px;
+	}
+
+	.clear-price
+	{
+		padding-top: 0;
+	}
+
+	.offer > h1
+	{
+		font-size: 12pt;
+	}
+
+	.offer > p
+	{
+		font-size: 8pt;
+	}
+
+	.offer > h3
+	{
+		font-size: 10pt;
 	}
 }
 
@@ -319,5 +385,23 @@ textarea
 	#content
 	{
 		padding-top: 75px;
+	}
+
+	.offer
+	{
+		margin: 100px 1% 0px 1%;
+		width: 30%;
+		height: 200px;
+		text-overflow: ellipsis;
+	}
+
+	.offer > h1
+	{
+		padding-top: 50px;
+	}
+
+	.clear-price
+	{
+		display: none;
 	}
 }
