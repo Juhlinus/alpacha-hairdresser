@@ -38,7 +38,7 @@ a,a:hover,a:active,a:focus {
 {
 	position: absolute;
 	
-	background-image: url('../img/PEI-Hair-Salons.jpg');
+	background-image: url('../img/barber-shop-1.jpg');
 	background-size: cover;
 	background-position: center;
 
@@ -232,15 +232,92 @@ textarea
 	height: 75px;
 }
 
+
+#second-main
+{
+	margin: 0 auto;
+	width: 1200px;
+	z-index: 5;
+	color: black;
+}
+
+#prices
+{
+	position: relative;
+	background-image: url('../img/barber-shop-2.jpg');
+	min-height: 850px;
+	padding: 0;
+	z-index: -2;
+}
+
+#prices-overlay
+{
+	position: absolute;
+	background: rgba(115, 189, 177, 0.75);
+	min-height: 850px;
+	z-index: -1;
+}
+
+#sub-prices
+{
+	margin: 50px auto;
+	width: 1200px;
+}
+
+#sub-prices > h1
+{
+	text-align: center;
+	color: white;
+	font-size: 46pt;
+}
+
 @media only screen and (max-device-width: 800px)
 {
 	nav
 	{
-		display: none;
+		float: right;
+	}
+	#main
+	{
+		width: initial;
+	}
+
+	#logo
+	{
+		text-align: center;
+	}
+
+	#content
+	{
+		padding-top: 75px;
+	}
+}
+
+@media only screen and (max-device-width: 640px)
+{
+	nav.col-xs-7
+	{
+		padding-top: 50px;
+		width: 100%;
+	}
+
+	h5.noselect
+	{
+		width: 50%;
 	}
 
 	#main
 	{
 		width: initial;
+	}
+
+	#logo
+	{
+		text-align: center;
+	}
+
+	#content
+	{
+		padding-top: 75px;
 	}
 }
