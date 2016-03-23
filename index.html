@@ -187,9 +187,19 @@
 			});
 		}
 		$(function() {
+			/*
 			setTimeout(function(){
 				initMap();
 			}, 1000);
+			*/
+			$(window).scroll(function() {
+				var height = $(window).scrollTop();
+
+				if(height  > 1000) {
+			        // do something
+			        initMap();
+			    }
+			});
 
 			$('nav > h5 > a[href^="#"]').on('click', function(e) {
 				e.preventDefault();
